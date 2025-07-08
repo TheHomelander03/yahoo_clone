@@ -1,0 +1,24 @@
+:root {
+    --color-morado: #9611d3;
+    --color-negro: #202114;
+    --color-blanco: #ffffff;
+    --color-claro: #ededed;
+    --color-gris: #b4b4b4;
+}
+
+body{
+    background-color: var(--color-blanco);
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+header div nav{
+    background-color: gray;
+    height: 70px;   
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
