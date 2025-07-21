@@ -1,24 +1,72 @@
-:root {
-    --color-morado: #9611d3;
-    --color-negro: #202114;
-    --color-blanco: #ffffff;
-    --color-claro: #ededed;
-    --color-gris: #b4b4b4;
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 body{
-    background-color: var(--color-blanco);
-    width: 100vw;
     height: 100vh;
-    margin: 0;
-    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* Header Style */
+
+header {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
 }
 
-header div nav{
-    background-color: gray;
-    height: 70px;   
-    padding: 5px;
+header nav{
     display: flex;
-    justify-content: flex-end;
-    align-items: center; 
+    column-gap: 40px;
 }
+
+/* Main Style */
+
+main{
+    text-align: center;
+    width: 600px;
+    align-self: center;
+}
+
+main .header h2{
+    font-size: 40px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+main .header p{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+main .seacher label{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 100px;
+    column-gap: 10px;
+}
+
+main .seacher input{
+    flex-grow: 1;
+    border: none;
+    border-right: 1px solid gray;
+    font-size: 16px;
+}
+
+main .seacher input:focus{
+    outline: none;
+}
+/* Footer Style */
